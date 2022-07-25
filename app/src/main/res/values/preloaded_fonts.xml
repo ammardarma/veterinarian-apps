@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alfa_slab_one</item>
+        <item>@font/andika</item>
+        <item>@font/anton</item>
+        <item>@font/lato</item>
+        <item>@font/nunito_sans_semibold</item>
+    </array>
+</resources>

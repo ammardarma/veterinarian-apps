@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".VetDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgCardDetail"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            app:cardElevation="0dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp">
+        <ImageView
+            android:id="@+id/tvVetPhotoDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@tools:sample/avatars"
+            android:scaleType="fitXY"
+            />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/vetNameDetail"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgCardDetail"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/Veterinarian"
+            android:textStyle="bold"
+            android:textSize="29sp"
+            style="@style/textDetail"/>
+
+        <TextView
+            android:id="@+id/vetAddressDetail"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/vetNameDetail"
+            android:text="@string/addressVet"
+            style="@style/textDetail"/>
+
+        <LinearLayout
+            android:id="@+id/mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vetAddressDetail"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/phone"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/vetPhoneDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phoneVet"
+                style="@style/textDetail"
+                android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_baseline_location_city_24"
+                    android:layout_marginLeft="16dp"/>
+                <TextView
+                    android:id="@+id/vetCityDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cityVet"
+                    style="@style/textDetail"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/mid"
+            android:layout_marginTop="16dp"
+            android:weightSum="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardOpen"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="6dp"
+            android:background="@color/white"
+            app:cardElevation="1dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/jam_buka"
+                android:backgroundTint="@color/iconColor"
+                android:background="@drawable/rectangle3"/>
+
+            <TextView
+                android:id="@+id/vetOpenHoursDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/openHoursVet"
+                style="@style/textDetail"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/darkBlue"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/jamBuka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jamBuka"
+                style="@style/textDetail"
+                android:layout_marginTop="52dp"
+                android:textColor="@color/darkBlue"
+                android:layout_gravity="center_horizontal"/>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardClose"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="6dp"
+            android:background="@color/white"
+            app:cardElevation="1dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/jam_tutup"
+                android:backgroundTint="@color/iconColor"
+                android:background="@drawable/rectangle3"/>
+
+            <TextView
+                android:id="@+id/vetCloseHoursDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/closeHoursVet"
+                style="@style/textDetail"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/darkBlue"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/jamTutup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jamTutup"
+                style="@style/textDetail"
+                android:layout_marginTop="52dp"
+                android:textColor="@color/darkBlue"
+                android:layout_gravity="center_horizontal"/>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/mid2"
+            android:layout_marginTop="32dp">
+            <Button
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle3"
+                app:backgroundTint="@null"
+                android:text="@string/share"
+                android:layout_weight="0.5"
+                android:layout_marginRight="16dp"/>
+        <Button
+            android:id="@+id/openGoogleMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle3"
+            app:backgroundTint="@null"
+            android:text="@string/buka_di_google_maps"
+            android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

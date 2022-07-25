@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/darkBlue"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/anton"
+        android:text="@string/Veterinarian"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:letterSpacing="0.36"/>
+
+    <ImageView
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/mainpicture"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/opening"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <ImageButton
+        android:id="@+id/go"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_navigate_next_241"
+        android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+</ScrollView>
